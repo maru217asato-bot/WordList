@@ -1,17 +1,12 @@
-//
-//  WorldListApp.swift
-//  WorldList
-//
-//  Created by 丸岡　亜聡 on 2025/12/07.
-//
-
 import SwiftUI
+import SwiftData
 
 @main
-struct WorldListApp: App {
+struct WordLIstApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .modelContainer(for: Word.self)
         }
     }
 }
