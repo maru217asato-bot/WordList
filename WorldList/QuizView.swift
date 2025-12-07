@@ -17,7 +17,7 @@ struct QuizView: View {
             Spacer()
             
             if words.isEmpty {
-                Text("登録されている単語がありません")
+                Text("登録されている単語がありません。")
             }else{
                 Text(words[index].english)
                     .font(.largeTitle)
